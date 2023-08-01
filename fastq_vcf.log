@@ -1,0 +1,90 @@
+Analysis complete for sample2_R1.fastq.gz
+Analysis complete for sample2_R2.fastq.gz
+Analysis complete for sample1_R1.fastq.gz
+Analysis complete for sample1_R2.fastq.gz
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 8/8  
+All modules imported
+Creating directories......
+['output.log', 'sample2_R2.fastq.gz', 'BED', 'reference', '4.Variants', '1.RawData', 'sample2_R1.fastq.gz', '2.TrimmedData', 'sample1_R1.fastq.gz', '3.Alignment', 'sample1_R2.fastq.gz', '5.Annotation', 'script']
+None
+['QC']
+Moved: output.log
+Moved: sample2_R2.fastq.gz
+Moved: sample2_R1.fastq.gz
+Moved: sample1_R1.fastq.gz
+Moved: sample1_R2.fastq.gz
+Data fetched
+None
+/media/bioinfo/sda1/basesolev/1.RawData
+QC Done....
+/media/bioinfo/sda1/basesolev/1.RawData
+None
+/media/bioinfo/sda1/basesolev/1.RawData/QC
+['sample1_R2_fastqc.html', 'sample1_R1_fastqc.zip', 'sample2_R2_fastqc.html', 'sample2_R1_fastqc.html', 'sample2_R2_fastqc.zip', 'sample2_R1_fastqc.zip', 'sample1_R1_fastqc.html', 'sample1_R2_fastqc.zip']
+MultiQC Done....
+/media/bioinfo/sda1/basesolev/1.RawData/QC
+None
+['output.log', 'sample2_R2.fastq.gz', 'sample2_R1.fastq.gz', 'sample1_R1.fastq.gz', 'sample1_R2.fastq.gz', 'QC']
+Triming of raw data...............
+Trimminig Done....
+/media/bioinfo/sda1/basesolev/1.RawData
+None
+/media/bioinfo/sda1/basesolev/reference
+['hg19.fa']
+Indexing for reference genome hg19..........
+Done indexing
+indexing using samtools for reference geneome.........
+########################### making dict file ##############################################
+########################### Done dict file ##############################################
+/media/bioinfo/sda1/basesolev/reference
+None
+/media/bioinfo/sda1/basesolev/2.TrimmedData
+['sample2_R1_val_1.fq.gz', 'sample1_R1_val_1.fq.gz', 'sample2_R2_val_2.fq.gz', 'sample1_R2.fastq.gz_trimming_report.txt', 'sample1_R2_val_2.fq.gz', 'sample2_R1.fastq.gz_trimming_report.txt', 'sample2_R2.fastq.gz_trimming_report.txt', 'sample1_R1.fastq.gz_trimming_report.txt']
+Alignment for sample ID:  sample2
+Aligning....................
+Alignment for sample ID:  sample1
+Aligning....................
+########################### Alignment DONE ##############################################
+/media/bioinfo/sda1/basesolev/2.TrimmedData
+None
+/media/bioinfo/sda1/basesolev/3.Alignment
+['sample1.sorted.bam', 'sample2.sorted.bam']
+Running for sample ID:  sample1
+Running for sample ID:  sample1.sorted.bam
+Running for sample ID:  sample2
+Running for sample ID:  sample2.sorted.bam
+############################### MarkDuplicate Done ###############################################....
+/media/bioinfo/sda1/basesolev/3.Alignment
+Sorting sample ID:  sample1.sorted.bam
+Sorting sample ID:  sample2.sorted.bam
+####################################### Indexing for BAM files Done ##################################....
+################################# start variant calling #########################################################
+/media/bioinfo/sda1/basesolev/3.Alignment
+['sample1.sorted.bam', 'sample2.sorted.bam']
+Running for sample:  sample1
+Running for sample:  sample1.sorted.bam
+Running for sample:  sample2
+Running for sample:  sample2.sorted.bam
+##################################### HaplotypeCaller Done ###################################################....
+##################################### Select Variant start ###################################################....
+/media/bioinfo/sda1/basesolev/3.Alignment
+None
+['sample1.sorted.bam.vcf.gz.tbi', 'sample2.sorted.bam.bamout.bai', 'sample2.sorted.bam.bamout.bam', 'sample1.sorted.bam.bamout.bai', 'sample1.sorted.bam.bamout.bam', 'sample2.sorted.bam.vcf.gz.tbi', 'sample1.sorted.bam.vcf.gz', 'sample2.sorted.bam.vcf.gz']
+['sample1', 'sample2']
+running for:  sample1
+running for:  sample1.sorted.bam.vcf.gz
+running for:  sample2
+running for:  sample2.sorted.bam.vcf.gz
+running for:  sample1
+running for:  sample1.sorted.bam.vcf.gz
+running for:  sample2
+running for:  sample2.sorted.bam.vcf.gz
+##################################### Select Variant Done ###################################################....
+##################################### Filter Variant Start ###################################################....
+/media/bioinfo/sda1/basesolev/4.Variants
+##################################### Filter Variant Done ###################################################....
+##################################### Merge Variant Start ###################################################....
+/media/bioinfo/sda1/basesolev/4.Variants
+sample id:  sample1
+sample id:  sample2
+##################################### Merge Variant Done ###################################################....
